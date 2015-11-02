@@ -1,0 +1,25 @@
+#innerfieldset{ 
+    margin-left: 433px;
+    margin-right: 490px;
+    padding-top: 0.95em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    /*height:85%;*/
+     max-width: 100%;
+}
+
+#btn{
+  color: #900;
+  font-weight: normal;
+  font-size: 120%;
+ padding-top: 0.15em;
+}
+#txt{
+ width:284px;
+ height:27px;
+  padding-top: 0.10em;
+}
+#list{
+  list-style-type:none;
+}
