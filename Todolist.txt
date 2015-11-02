@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="liststyle.css"/>
+
+<script>
+var d=0;
+function AddItem()
+{
+	if(d !== 19){
+d++;
+var container = document.createElement("li"); 
+var data = document.getElementById("txt").value;
+container.innerHTML='<div id="div-' + d + '">'+data+'<img src="cancel.png" onclick ="deleteFirstList(this)"></div>';
+var listcreate = document.getElementById("list");
+listcreate.appendChild(container);
+}else if(d >= 19){
+	alert("List is full,Please delete some items...");
+}
+} 
+
+function deleteFirstList(control) {
+	control.parentNode.remove();
+	d--;
+}
+</script>
+</head>
+<body background="images6.jpg">
+<H1><center><u><font color="brown">To-Do List</font></u> </center></H1>
+
+ <fieldset id="innerfieldset">
+
+<form>
+<input type="text" placeholder="Enter Text Here" id="txt"/>
+<input type ="button" id="btn" value="Add to list"onclick="AddItem()"/>
+</form>
+ <hr size="2" color="black" width="100%"> 
+<ul id="list"></ul>
+
+</fieldset>
+</body>
+</html>
